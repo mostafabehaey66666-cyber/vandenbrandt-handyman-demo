@@ -82,11 +82,11 @@ footer .brand span{color:#fff}
 footer .cols{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
 footer a{color:#fff}
 .fine{border-top:1px solid #2a2a2a;margin-top:30px;padding-top:20px;font-size:12.5px;color:#888}
-.float{position:fixed;right:18px;bottom:18px;z-index:30;background:var(--accent);color:#fff;padding:14px 20px;border-radius:50px;font-weight:700;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.25);font-size:15px}
+.hd{display:inline}@media(max-width:560px){.hd{display:none}}.float{position:fixed;right:18px;bottom:18px;z-index:30;background:var(--accent);color:#fff;padding:14px 20px;border-radius:50px;font-weight:700;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.25);font-size:15px}
 .rv{opacity:0;transform:translateY(16px);transition:.6s}
 .rv.in{opacity:1;transform:none}
 @media(max-width:860px){.hero .grid,.about{grid-template-columns:1fr}.services{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}nav a.h{display:none}}
-@media(max-width:560px){.services{grid-template-columns:1fr}.row{grid-template-columns:1fr}.hero{padding:52px 0}section{padding:56px 0}}
+@media(max-width:560px){.nav .btn{padding:10px 14px;font-size:14px;white-space:nowrap}.brand span{font-size:14px}.brand svg{width:34px;height:34px}.demo{font-size:12px}.services{grid-template-columns:1fr}.row{grid-template-columns:1fr}.hero{padding:52px 0}section{padding:56px 0}}
 </style>
 </head>
 <body>
@@ -95,7 +95,7 @@ footer a{color:#fff}
 <a class="brand" href="#top" aria-label="Vandenbrandt Handyman Services">
 <svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="6" fill="#0e0e0f"/><path d="M9 11h8l7 20 7-20h8L27.5 38h-7z" fill="#fff"/><path d="M30 8l9 4-2 4-4-1.5-1 2.5-4-2z" fill="#d9822b"/></svg>
 <span>Vandenbrandt<small>HANDYMAN SERVICES</small></span></a>
-<nav><a class="h" href="#services">Services</a><a class="h" href="#how">How it works</a><a class="h" href="#about">About</a><a class="h" href="#faq">FAQ</a><a class="btn" href="tel:+15197012395">Call 519-701-2395</a></nav>
+<nav><a class="h" href="#services">Services</a><a class="h" href="#how">How it works</a><a class="h" href="#about">About</a><a class="h" href="#faq">FAQ</a><a class="btn" href="tel:+15197012395">Call <span class="hd">519-701-2395</span></a></nav>
 </div></header>
 <main id="top">
 <section class="hero"><div class="wrap grid">
