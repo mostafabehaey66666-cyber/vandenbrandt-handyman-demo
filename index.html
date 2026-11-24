@@ -87,6 +87,10 @@ footer a{color:#fff}
 .rv.in{opacity:1;transform:none}
 @media(max-width:860px){.hero .grid,.about{grid-template-columns:1fr}.services{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}nav a.h{display:none}}
 @media(max-width:560px){.nav .btn{padding:10px 14px;font-size:14px;white-space:nowrap}.brand span{font-size:14px}.brand svg{width:34px;height:34px}.demo{font-size:12px}.services{grid-template-columns:1fr}.row{grid-template-columns:1fr}.hero{padding:52px 0}section{padding:56px 0}}
+
+.hero{background:linear-gradient(90deg,rgba(10,10,10,.88),rgba(10,10,10,.6)),var(--hi,none) center/cover #1a1a1a;color:#fff}
+.hero h1{color:#fff}.hero .lead{color:#e8e8e8}.hero .btn.alt{color:#fff;border-color:#fff}.hero .btn.alt:hover{background:#fff;color:#111}
+.svc{padding:0}.svc img{display:block;width:100%;height:190px;object-fit:cover}.svc .b{padding:22px 26px 26px}
 </style>
 </head>
 <body>
@@ -117,12 +121,12 @@ footer a{color:#fff}
 <h2>Home care services</h2>
 <p class="sub">If it is not listed, ask. Small jobs and big projects are both welcome.</p>
 <div class="services">
-<div class="svc rv"><div class="n">01</div><h3>General handyman</h3><p>Repairs and home projects, big or small. One call for the whole to-do list.</p></div>
-<div class="svc rv"><div class="n">02</div><h3>Roofing</h3><p>New roof or roof work. Roofing needs big or small.</p></div>
-<div class="svc rv"><div class="n">03</div><h3>Eavestrough cleaning</h3><p>Clear gutters before winter to help prevent water damage, ice dams and staining on siding.</p></div>
-<div class="svc rv"><div class="n">04</div><h3>AC cleaning</h3><p>Inside and out, plus a cooling check, so your system is done the right way.</p></div>
-<div class="svc rv"><div class="n">05</div><h3>HVAC help</h3><p>Local HVAC and handyman support for your home comfort.</p></div>
-<div class="svc rv"><div class="n">06</div><h3>Christmas lights</h3><p>Climb-free holidays. Lights installed so you can enjoy a stress-free, beautifully lit home. Ask about bundling with eavestrough cleaning.</p></div>
+<div class="svc rv"><img data-k="handyman" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="General handyman" loading="lazy" width="700" height="440"><div class="b"><div class="n">01</div><h3>General handyman</h3><p>Repairs and home projects, big or small. One call for the whole to-do list.</p></div></div>
+<div class="svc rv"><img data-k="roofing" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Roofing" loading="lazy" width="700" height="440"><div class="b"><div class="n">02</div><h3>Roofing</h3><p>New roof or roof work. Roofing needs big or small.</p></div></div>
+<div class="svc rv"><img data-k="eavestrough" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Eavestrough cleaning" loading="lazy" width="700" height="440"><div class="b"><div class="n">03</div><h3>Eavestrough cleaning</h3><p>Clear gutters before winter to help prevent water damage, ice dams and staining on siding.</p></div></div>
+<div class="svc rv"><img data-k="ac" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="AC cleaning" loading="lazy" width="700" height="440"><div class="b"><div class="n">04</div><h3>AC cleaning</h3><p>Inside and out, plus a cooling check, so your system is done the right way.</p></div></div>
+<div class="svc rv"><img data-k="hvac" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="HVAC help" loading="lazy" width="700" height="440"><div class="b"><div class="n">05</div><h3>HVAC help</h3><p>Local HVAC and handyman support for your home comfort.</p></div></div>
+<div class="svc rv"><img data-k="lights" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Christmas lights" loading="lazy" width="700" height="440"><div class="b"><div class="n">06</div><h3>Christmas lights</h3><p>Climb-free holidays. Lights installed so you can enjoy a stress-free, beautifully lit home. Ask about bundling with eavestrough cleaning.</p></div></div>
 </div></div></section>
 
 <section class="band" id="how"><div class="wrap">
@@ -173,7 +177,7 @@ footer a{color:#fff}
 <div><p>Call or text<br><a href="tel:+15197012395" style="font-size:22px;font-family:Oswald">519-701-2395</a></p></div>
 </div>
 <p class="fine">Unofficial demo website created as a sample for Vandenbrandt Handyman Services. Not affiliated with or approved by the business. Contact details and service descriptions come from the business's own public posts. No prices are shown because none were published.</p>
-</div></footer>
+</div><p style="font-size:12px;opacity:.7;margin-top:10px">Photos: Pexels (free to use). Stock images, not the business's own work.</p></footer>
 <a class="float" href="sms:+15197012395">Text for a quote</a>
 <script>
 document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();
@@ -182,5 +186,6 @@ location.href='sms:+15197012395?&body='+encodeURIComponent(m);});
 var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
 document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
 </script>
+<script>function IMGLOAD(){var I=window.IMG||{};if(I.hero)document.querySelector('.hero').style.setProperty('--hi','url('+I.hero+')');document.querySelectorAll('img[data-k]').forEach(function(e){if(I[e.dataset.k])e.src=I[e.dataset.k]})}</script><script defer src="js/hero.js"></script><script defer src="js/s1.js"></script><script defer src="js/s2.js"></script>
 </body>
 </html>
